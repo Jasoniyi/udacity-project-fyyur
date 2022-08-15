@@ -96,10 +96,16 @@ p.lead {
     margin-right: 10px;
 }
 
+.delete {
+  color: red;
+  cursor: pointer;
+}
+
 ul.items {
   list-style: none;
   padding: 0;
   margin: 0;
+  width: 22em;
 }
 ul.items > li > a {
   margin-bottom: 15px;

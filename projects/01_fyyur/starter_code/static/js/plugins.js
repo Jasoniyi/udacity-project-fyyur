@@ -18,3 +18,11 @@ window.log = function(){
 
 // place any jQuery/helper plugins in here, instead of separate, slower script files.
 
+// delBtn = document.getElementById('#del-btn');
+
+// if(delBtn){
+//   delBtn.addEventListener('click', function(e) {
+//   console.log(e)
+// })
+// }
+
