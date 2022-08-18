@@ -61,8 +61,8 @@ class Artist(db.Model):
     genres = db.Column(db.String(120))
     image_link = db.Column(db.String(500))
     facebook_link = db.Column(db.String(120))
-    website_link = db.Column(db.String())
-    looking_for_venue = db.Column(db.Boolean)
+    website_link = db.Column(db.String(120))
+    seeking_venue = db.Column(db.Boolean)
     seeking_description = db.Column(db.String(120))
     shows = db.relationship('Show', backref='artist', lazy=True)
 
@@ -82,8 +82,8 @@ class Artist(db.Model):
             'genres': self.genres,
             'image_link': self.image_link,
             'facebook_link': self.facebook_link,
-            'looking_for_venue': self.looking_for_venue,
             'website_link': self.website_link,
+            'seeking_venue': self.seeking_venue,
             'seeking_description': self.seeking_description
         }
 # TODO Implement Show and Artist models, and complete all model relationships and properties, as a database migration.
